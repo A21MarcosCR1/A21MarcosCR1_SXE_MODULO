@@ -7,9 +7,9 @@ import re
 
 class TimeOffRequest(models.Model):
     _name = 'time.off.request'
-    _description = 'Time off request'
+    _description = 'Time off request form'
 
-    employee_id = fields.Many2one('employee.model', 'Your ID', required = True)
+    employee_id = fields.Many2one('hr.employee', 'Employee ID', required = True)
     reason_for_time_off = fields.Char("Explain your reasons: ", required = True)
     date_begin = fields.Date('Starting date', required=True)
     date_end = fields.Date('End date', required = True)
