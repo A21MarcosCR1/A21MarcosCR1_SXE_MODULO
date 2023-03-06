@@ -1,10 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
 <odoo>
-  <record id='time_off_request_action' model='ir.actions.act_window'>
-        <field name="name">Time Off Form</field>
-        <field name="res_model">time.off.request</field>
-        <field name="view_mode">tree,form</field>
-    </record>
-    <menuitem name="Time Off Form" id="time_off_base_menu" />
     <record model="ir.ui.view" id="time_off_request_form_view">
         <field name="name">time off request form</field>
         <field name="model">time.off.request</field>
@@ -23,5 +18,4 @@
             </form>
         </field>
     </record>
-
 </odoo>

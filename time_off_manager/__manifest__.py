@@ -26,7 +26,7 @@
     'version': '14.1.0',
 
     # any module necessary for this one to work correctly
-    'depends': ['base','hr'],
+    'depends': ['base','hr', 'web'],
 
     # always loaded
     'data': [
