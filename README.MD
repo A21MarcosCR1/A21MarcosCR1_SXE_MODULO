@@ -22,7 +22,7 @@ el registro de los pacientes y al igual que en el anterior, permite el mismo
 tipo de operaciones. También encontramos el <b>Appointments</b>, que permite
 gestionar citas entre pacientes y doctores almacenados.
 
-## Entidades 
+## Modelos 
 
 ### Pacientes
 Todos los pacientes tienen información básica almacenada, además de un 
