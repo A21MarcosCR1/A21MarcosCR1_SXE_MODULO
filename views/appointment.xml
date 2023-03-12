@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_patient_appointment_form" model="ir.ui.view">
+        <field name="name">patient.appointment.form</field>
+        <field name="model">patient.appointment</field>
+        <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="ref" readonly="1"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <field name="patient_id" options="{'no_open': True, 'no_create': True}"/>
+                            <field name="doctor_id" options="{'no_open': True, 'no_create': True}"/>
+                            <field name="date_appointment"/>
+                            <field name="notes_on_appointment"/>
+                            <field name="prescription"/>
+                        </group>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids"/>
+                        <field name="message_ids" options="{'post_refresh': 'recipients'}"/>
+                    </div>
+                </form>
+        </field>
+    </record>
+
+    <record id="view_patient_appointment_tree" model="ir.ui.view">
+        <field name="name">patient.appointment.tree</field>
+        <field name="model">patient.appointment</field>
+        <field name="arch" type="xml">
+                <tree>
+                    <field name="ref"/>
+                    <field name="patient_id"/>
+                    <field name="doctor_id"/>
+                    <field name="date_appointment"/>
+                </tree>
+        </field>
+    </record>
+
+    <record id="view_patient_appointment_search" model="ir.ui.view">
+        <field name="name">patient.appointment.search</field>
+        <field name="model">patient.appointment</field>
+        <field name="arch" type="xml">
+                <search>
+                    <field name="patient_id"/>
+                    <field name="date_appointment"/>
+                </search>
+        </field>
+    </record>
+
+
+    <record id="action_patient_appointment" model="ir.actions.act_window">
+        <field name="name">Appointments</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">patient.appointment</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem
+            id="hospital_patient_appointment"
+            name="Appointments"
+            parent="menu_hospital_patients"
+            action="action_patient_appointment"
+            sequence="11"/>
+</odoo>

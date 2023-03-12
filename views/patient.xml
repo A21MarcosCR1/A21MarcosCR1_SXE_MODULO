@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_hospital_patient_form" model="ir.ui.view">
+        <field name="name">hospital.patient.form</field>
+        <field name="model">hospital.patient</field>
+        <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="ref" readonly="1"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <field name="name"/>
+                            <field name="age_group"/>
+                            <field name="gender"/>
+                            <field name="dob"/>
+                            <field name="doctor_id" options="{'no_open': True, 'no_create': True}"/>
+                            <field name="age"/>
+                        </group>
+                    </sheet>
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids"/>
+                        <field name="message_ids" options="{'post_refresh': 'recipients'}"/>
+                    </div>
+                </form>
+        </field>
+    </record>
+
+    <record id="view_hospital_patient_tree" model="ir.ui.view">
+        <field name="name">hospital.patient.tree</field>
+        <field name="model">hospital.patient</field>
+        <field name="arch" type="xml">
+                <tree>
+                    <field name="ref"/>
+                    <field name="name"/>
+                    <field name="age"/>
+                    <field name="gender"/>
+                </tree>
+        </field>
+    </record>
+
+    <record id="view_hospital_patient_search" model="ir.ui.view">
+        <field name="name">hospital.patient.search</field>
+        <field name="model">hospital.patient</field>
+        <field name="arch" type="xml">
+                <search>
+                    <field name="ref"/>
+                    <field name="name"/>
+                    <field name="age"/>
+                    <field name="gender"/>
+
+                    <filter name="filter_male" string="Males" domain="[('gender', '=', 'male')]"/>
+                    <filter name="filter_female" string="Females" domain="[('gender', '=', 'female')]"/>
+                   <separator/>
+                    <filter name="filter_babies" string="Babies" domain="[('age_group', '=', 'baby')]"/>
+                    <filter name="filter_children" string="Children" domain="[('age_group', '=', 'child')]"/>
+                    <filter name="filter_teens" string="Teens" domain="[('age_group', '=', 'teen')]"/>
+                    <filter name="filter_adults" string="Adults" domain="[('age_group', '=', 'adult')]"/>
+                    <filter name="filter_seniors" string="Seniors" domain="[('age_group', '=', 'senior')]"/>
+                    <group expand="0" string="Group by...">
+                        <filter string="Gender" name="group_by_gender" context="{'group_by': 'gender'}"/>
+                        <filter string="Age group" name="group_by_age" context="{'group_by': 'age_group'}"/>
+                    </group>
+                </search>
+        </field>
+    </record>
+
+
+    <record id="action_hospital_patient" model="ir.actions.act_window">
+        <field name="name">Patients</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">hospital.patient</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem
+            id="hospital_patients_menu"
+            name="Patient records"
+            parent="menu_hospital_patients"
+            action="action_hospital_patient"
+            sequence="10"/>
+
+</odoo>

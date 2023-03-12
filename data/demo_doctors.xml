@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="doc_1" model="hospital.doctor">
+            <field name="name">Flora Miranda</field>
+            <field name="gender">female</field>
+            <field name="specialty">family doctor</field>
+            <field name="is_surgeon">False</field>
+            <field name="ref">MD000001</field>
+        </record>
+
+        <record id="doc_2" model="hospital.doctor">
+            <field name="name">Javier Fernández</field>
+            <field name="gender">male</field>
+            <field name="specialty">family doctor</field>
+            <field name="is_surgeon">False</field>
+            <field name="ref">MD000002</field>
+        </record>
+
+        <record id="doc_3" model="hospital.doctor">
+            <field name="name">Jorge Rodríguez</field>
+            <field name="gender">male</field>
+            <field name="specialty">family doctor</field>
+            <field name="is_surgeon">False</field>
+            <field name="ref">MD000003</field>
+        </record>
+
+        <record id="doc_4" model="hospital.doctor">
+            <field name="name">Sarah Michaels</field>
+            <field name="gender">female</field>
+            <field name="specialty">family doctor</field>
+            <field name="is_surgeon">True</field>
+            <field name="ref">MD000004</field>
+        </record>
+
+        <record id="doc_5" model="hospital.doctor">
+            <field name="name">Michael Douglas</field>
+            <field name="gender">female</field>
+            <field name="specialty">family doctor</field>
+            <field name="is_surgeon">False</field>
+            <field name="ref">MD000005</field>
+        </record>
+
+        <record id="doc_6" model="hospital.doctor">
+            <field name="name">George Farrell</field>
+            <field name="gender">male</field>
+            <field name="specialty">nephrologist</field>
+            <field name="is_surgeon">True</field>
+            <field name="ref">MD000006</field>
+        </record>
+
+        <record id="doc_7" model="hospital.doctor">
+            <field name="name">Vivienne Nichols</field>
+            <field name="gender">female</field>
+            <field name="specialty">psychiatrist</field>
+            <field name="is_surgeon">False</field>
+            <field name="ref">MD000007</field>
+        </record>
+
+        <record id="doc_8" model="hospital.doctor">
+            <field name="name">Kathleen Kirsten</field>
+            <field name="gender">female</field>
+            <field name="specialty">psychiatrist</field>
+            <field name="is_surgeon">False</field>
+            <field name="ref">MD000008</field>
+        </record>
+
+        <record id="doc_9" model="hospital.doctor">
+            <field name="name">Jason Fung</field>
+            <field name="gender">male</field>
+            <field name="specialty">nephrologist</field>
+            <field name="is_surgeon">False</field>
+            <field name="ref">MD000009</field>
+        </record>
+
+        <record id="doc_10" model="hospital.doctor">
+            <field name="name">Marc Goodman</field>
+            <field name="gender">male</field>
+            <field name="specialty">cardiologist</field>
+            <field name="is_surgeon">True</field>
+            <field name="ref">MD000010</field>
+        </record>
+
+        <record id="doc_11" model="hospital.doctor">
+            <field name="name">Carl Jung</field>
+            <field name="gender">male</field>
+            <field name="specialty">neurologist</field>
+            <field name="is_surgeon">False</field>
+            <field name="ref">MD000011</field>
+        </record>
+
+        <record id="doc_12" model="hospital.doctor">
+            <field name="name">Sachiro Miyazaki</field>
+            <field name="gender">male</field>
+            <field name="specialty">dermatologist</field>
+            <field name="is_surgeon">True</field>
+            <field name="ref">MD000012</field>
+        </record>
+
+        <record id="doc_13" model="hospital.doctor">
+            <field name="name">Jessica Hammet</field>
+            <field name="gender">female</field>
+            <field name="specialty">gynecologist</field>
+            <field name="is_surgeon">False</field>
+            <field name="ref">MD000013</field>
+        </record>
+
+        <record id="doc_14" model="hospital.doctor">
+            <field name="name">James Wilson</field>
+            <field name="gender">male</field>
+            <field name="specialty">oncologist</field>
+            <field name="is_surgeon">False</field>
+            <field name="ref">MD000014</field>
+        </record>
+
+        <record id="doc_15" model="hospital.doctor">
+            <field name="name">Samantha Watson</field>
+            <field name="gender">female</field>
+            <field name="specialty">endocrinologist</field>
+            <field name="is_surgeon">True</field>
+            <field name="ref">MD000015</field>
+        </record>
+
+        <record id="doc_16" model="hospital.doctor">
+            <field name="name">Amy Lee</field>
+            <field name="gender">female</field>
+            <field name="specialty">dermatologist</field>
+            <field name="is_surgeon">True</field>
+            <field name="ref">MD000016</field>
+        </record>
+
+
+    </data>
+</odoo>

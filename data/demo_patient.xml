@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="patient_1" model="hospital.patient">
+            <field name="name">Jeffrey Michaels</field>
+            <field name="doctor_id" ref="modulo_hospital.doc_1"/>
+            <field name="gender">male</field>
+            <field name="dob">2000-01-01</field>
+            <field name="age">23</field>
+            <field name="age_group">adult</field>
+            <field name="ref">HP000001</field>
+        </record>
+
+        <record id="patient_2" model="hospital.patient">
+            <field name="name">Sarah Anderson</field>
+            <field name="doctor_id" ref="modulo_hospital.doc_1"/>
+            <field name="gender">female</field>
+            <field name="dob">2001-01-01</field>
+            <field name="age">22</field>
+            <field name="age_group">adult</field>
+            <field name="ref">HP000002</field>
+        </record>
+
+        <record id="patient_3" model="hospital.patient">
+            <field name="name">John Galt</field>
+            <field name="doctor_id" ref="modulo_hospital.doc_2"/>
+            <field name="gender">male</field>
+            <field name="dob">1990-01-01</field>
+            <field name="age">33</field>
+            <field name="age_group">adult</field>
+            <field name="ref">HP000003</field>
+        </record>
+
+        <record id="patient_4" model="hospital.patient">
+            <field name="name">Andrea García</field>
+            <field name="doctor_id" ref="modulo_hospital.doc_2"/>
+            <field name="gender">female</field>
+            <field name="dob">1980-01-01</field>
+            <field name="age">43</field>
+            <field name="age_group">adult</field>
+            <field name="ref">HP000004</field>
+        </record>
+
+        <record id="patient_5" model="hospital.patient">
+            <field name="name">Pepe Hernández</field>
+            <field name="doctor_id" ref="modulo_hospital.doc_3"/>
+            <field name="gender">male</field>
+            <field name="dob">1960-01-01</field>
+            <field name="age">63</field>
+            <field name="age_group">senior</field>
+            <field name="ref">HP000005</field>
+        </record>
+
+        <record id="patient_6" model="hospital.patient">
+            <field name="name">Karla Badelt</field>
+            <field name="doctor_id" ref="modulo_hospital.doc_3"/>
+            <field name="gender">female</field>
+            <field name="dob">2013-01-01</field>
+            <field name="age">10</field>
+            <field name="age_group">child</field>
+            <field name="ref">HP000006</field>
+        </record>
+
+        <record id="patient_7" model="hospital.patient">
+            <field name="name">Klaus Badelt</field>
+            <field name="doctor_id" ref="modulo_hospital.doc_4"/>
+            <field name="gender">male</field>
+            <field name="dob">2021-01-01</field>
+            <field name="age">2</field>
+            <field name="age_group">baby</field>
+            <field name="ref">HP000007</field>
+        </record>
+
+        <record id="patient_8" model="hospital.patient">
+            <field name="name">Siobhan Carefree</field>
+            <field name="doctor_id" ref="modulo_hospital.doc_4"/>
+            <field name="gender">female</field>
+            <field name="dob">2010-01-01</field>
+            <field name="age">13</field>
+            <field name="age_group">teen</field>
+            <field name="ref">HP000008</field>
+        </record>
+
+        <record id="patient_9" model="hospital.patient">
+            <field name="name">Mark Fishbach</field>
+            <field name="doctor_id" ref="modulo_hospital.doc_5"/>
+            <field name="gender">male</field>
+            <field name="dob">1988-01-01</field>
+            <field name="age">35</field>
+            <field name="age_group">adult</field>
+            <field name="ref">HP000009</field>
+        </record>
+
+        <record id="patient_10" model="hospital.patient">
+            <field name="name">Wade Bhonsule</field>
+            <field name="doctor_id" ref="modulo_hospital.doc_5"/>
+            <field name="gender">male</field>
+            <field name="dob">1999-01-01</field>
+            <field name="age">24</field>
+            <field name="age_group">adult</field>
+            <field name="ref">HP000010</field>
+        </record>
+
+    </data>
+</odoo>
