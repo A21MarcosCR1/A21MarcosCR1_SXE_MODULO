@@ -3,7 +3,8 @@ Este es un módulo introductorio para gestionar los doctores
 y pacientes de un hospital, además de las citas que tienen 
 entre ellos. El idioma por defecto es el inglés, pero el español
 de España también está disponible, y por tanto, se adaptará si
-elegimos ese idioma en Odoo.
+elegimos ese idioma en Odoo. En el resto de la descripción, asumiré
+que el idioma es inglés, que es el que tiene por defecto.
 
 ## Vistas
 
